@@ -1,0 +1,21 @@
+@use "./variables"
+@use "./mixins"
+  
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  text-decoration: none
+  list-style: none
+  font-family: variables.$font-geral
+
+button
+  cursor: pointer
+  background: transparent
+  border: none
+
+html, body
+  width: 100vw
+  height: 100%
+  background-color: variables.$page-bg-color 
+  @include mixins.center()

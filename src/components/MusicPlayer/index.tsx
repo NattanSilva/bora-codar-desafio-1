@@ -49,7 +49,8 @@ export const MusicPlayer = () => {
       </section>
       <button
         className="mode__control__btn"
-        onClick={(e) => {
+        onClick={(event) => {
+          event.preventDefault();
           switchPlayerScreenType();
           switchBtnType();
         }}
